@@ -1,8 +1,6 @@
 Reddit-Morphe: 2024.17.0  
 YouTube-Extended-anddea: 20.05.46  
 YouTube-Morphe: 20.40.45  
-YouTube-Music-Extended-anddea: 20.05.46  
-YouTube-Music-Morphe: 20.40.45  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanced YouTube and YT Music from Play Store  
 
 [rvx-morphe-module-builder](https://github.com/Susheate/rvx-morphe-module-builder)
