@@ -1,6 +1,7 @@
 Reddit-Morphe: 2024.17.0  
 YouTube-Extended-anddea: 20.05.46  
 YouTube-Morphe: 20.40.45  
+YouTube-Music-Extended-anddea (arm64-v8a): 8.30.54  
 YouTube-Music-Extended-anddea (arm-v7a): 8.30.54  
 YouTube-Music-Morphe (arm64-v8a): 8.40.54  
 YouTube-Music-Morphe (arm-v7a): 8.40.54  
