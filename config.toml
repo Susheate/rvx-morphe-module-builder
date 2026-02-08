@@ -6,62 +6,78 @@ parallel-jobs = 1
 
 # you can use rvmm-config-gen to generate a config
 
-[YouTube-Extended-anddea]
-enabled = true
-patches-source = "anddea/revanced-patches"
-cli-source = "j-hc/revanced-cli"
-rv-brand = "ReVanced Extended anddea"
-build-mode = "module"
+[YouTube]
+build-mode = "both"
+excluded-patches = ""
+included-patches = ""
+version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-app-name = "YT RVX anddea"
-module-prop-name = "yt-rvx-anddea"
-arch = "all"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
-
-[YouTube-Music-Extended-anddea]
-enabled = true
-patches-source = "anddea/revanced-patches"
-cli-source = "j-hc/revanced-cli"
-rv-brand = "ReVanced Extended anddea"
-build-mode = "module"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-app-name = "YT-Music RVX anddea"
-module-prop-name = "ytm-rvx-anddea"
+[Music]
+build-mode = "both"
 arch = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
+[GooglePhotos]
+build-mode = "both"
+arch = "both"
+version = "auto"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
+uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
 
-[YouTube-Morphe]
-enabled = true
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-build-mode = "module"
+[Spotify]
+enabled = false
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
+
+# https://github.com/j-hc/revanced-magisk-module/issues/554
+[Music-Extended]
+enabled = false
+app-name = "Music"
+patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
+build-mode = "both"
+arch = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+
+[YouTube-Extended]
+enabled = false
+app-name = "YouTube"
+patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
+build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-app-name = "YT Morphe"
-module-prop-name = "yt-morphe"
-arch = "all"
 
+[Twitch]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
+uptodown-dlurl = "https://twitch.en.uptodown.com/android"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/tv.twitch.android.app"
 
-[YouTube-Music-Morphe]
-enabled = true
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-build-mode = "module"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-app-name = "YT-Music Morphe"
-module-prop-name = "ytm-morphe"
-arch = "both"
+[Twitter]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+build-mode = "apk"
+dpi = "120-640dpi"
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
 
+[TikTok]
+enabled = false
+# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.zhiliaoapp.musically"
+included-patches = "'SIM spoof'"
 
-[Reddit-Morphe]
-enabled = true
-patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-build-mode = "module"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
-uptodown-dlurl = "https://reddit-official-app.fr.uptodown.com/android"
-app-name = "Reddit Morphe"
-module-prop-name = "reddit-morphe"
-arch = "all"
+[Messenger]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
+arch = "arm64-v8a"
+
+[IconPackStudio]
+enabled = false
+apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
