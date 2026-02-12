@@ -640,13 +640,13 @@ build_rv() {
 		local patches_ver="${patches_jar##*-}"
 		module_prop \
 			"${args[module_prop_name]}" \
-			"${app_name}" \
+			"${app_name} ${args[rv_brand]}" \
 			"${version} (patches ${patches_ver%%.$PATCH_EXT})" \
-			"${app_name} module" \
+			"${app_name} ${args[rv_brand]} Magisk module" \
 			"https://raw.githubusercontent.com/${GITHUB_REPOSITORY-}/update/${upj}" \
 			"$base_template"
 
-		local module_output="${app_name}-v${version_f}-${arch_f}.zip"
+		local module_output="${app_name_l}-${rv_brand_f}-magisk-v${version_f}-${arch_f}.zip"
 		pr "Packing module ${table}"
 		cp -f "$patched_apk" "${base_template}/base.apk"
 		if [ "${args[include_stock]}" = true ]; then cp -f "$stock_apk" "${base_template}/${pkg_name}.apk"; fi
