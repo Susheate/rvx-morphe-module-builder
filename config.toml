@@ -7,71 +7,70 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 
 [YouTube-Extended-anddea]
+app-name = "YT RVX anddea"
 enabled = true
 build-mode = "module"
-excluded-patches = ""
-included-patches = ""
-#version = "auto"
+version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 patches-source = "anddea/revanced-patches"
 cli-source = "j-hc/revanced-cli"
 #rv-brand = "ReVanced Extended anddea"
-app-name = "YT RVX anddea"
 module-prop-name = "yt-rvx-anddea"
-#arch = "all"
+arch = "all"
+riplib = true
 
 
 [YouTube-Music-Extended-anddea]
+app-name = "YT-Music RVX anddea"
 enabled = true
 build-mode = "module"
-excluded-patches = ""
-included-patches = ""
+version = "auto"
 patches-source = "anddea/revanced-patches"
 cli-source = "j-hc/revanced-cli"
 #rv-brand = "ReVanced Extended anddea"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-app-name = "YT-Music RVX anddea"
 module-prop-name = "ytm-rvx-anddea"
-#arch = "both"
+arch = "both"
+riplib = true
 
 
 [YouTube-Morphe]
+app-name = "YT Morphe"
 enabled = true
 build-mode = "module"
-excluded-patches = ""
-included-patches = ""
+version = "auto"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 #rv-brand = "Morphe"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-app-name = "YT Morphe"
 module-prop-name = "yt-morphe"
-#arch = "all"
+arch = "all"
+riplib = true
 
 
 [YouTube-Music-Morphe]
+app-name = "YT-Music Morphe"
 enabled = true
 build-mode = "module"
-excluded-patches = ""
-included-patches = ""
+version = "auto"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 #rv-brand = "Morphe"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-app-name = "YT-Music Morphe"
 module-prop-name = "ytm-morphe"
-#arch = "both"
+arch = "both"
+riplib = true
 
 
-[Reddit]
+[Reddit-Morphe]
+app-name = "Reddit Morphe"
 enabled = true
 build-mode = "module"
-excluded-patches = ""
-included-patches = ""
+version = "auto"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 #rv-brand = "Morphe"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
-app-name = "Reddit Morphe"
 module-prop-name = "reddit-morphe"
-#arch = "all"
+arch = "all"
+riplib = true
