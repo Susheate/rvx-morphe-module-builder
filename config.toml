@@ -63,7 +63,7 @@ module-prop-name = "ytm-morphe"
 #arch = "both"
 
 
-[Reddit-Morphe]
+[Reddit]
 enabled = true
 build-mode = "module"
 excluded-patches = ""
