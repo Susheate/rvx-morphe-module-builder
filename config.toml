@@ -6,78 +6,73 @@ parallel-jobs = 1
 
 # you can use rvmm-config-gen to generate a config
 
-[YouTube]
-build-mode = "both"
+[YouTube-Extended-anddea]
+enabled = true
+build-mode = "module"
 excluded-patches = ""
 included-patches = ""
-version = "auto"
+#version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+patches-source = "anddea/revanced-patches"
+cli-source = "j-hc/revanced-cli"
+#rv-brand = "ReVanced Extended anddea"
+build-mode = "module"
+app-name = "YT RVX anddea"
+module-prop-name = "yt-rvx-anddea"
+#arch = "all"
 
-[Music]
-build-mode = "both"
-arch = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
-[GooglePhotos]
-build-mode = "both"
-arch = "both"
-version = "auto"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
-uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
+[YouTube-Music-Extended-anddea]
+enabled = true
+build-mode = "module"
+excluded-patches = ""
+included-patches = ""
+patches-source = "anddea/revanced-patches"
+cli-source = "j-hc/revanced-cli"
+#rv-brand = "ReVanced Extended anddea"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
+app-name = "YT-Music RVX anddea"
+module-prop-name = "ytm-rvx-anddea"
+#arch = "both"
 
-[Spotify]
-enabled = false
-uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.spotify.music"
 
-# https://github.com/j-hc/revanced-magisk-module/issues/554
-[Music-Extended]
-enabled = false
-app-name = "Music"
-patches-source = "inotia00/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-build-mode = "both"
-arch = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-
-[YouTube-Extended]
-enabled = false
-app-name = "YouTube"
-patches-source = "inotia00/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-build-mode = "both"
+[YouTube-Morphe]
+enabled = true
+build-mode = "module"
+excluded-patches = ""
+included-patches = ""
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+#rv-brand = "Morphe"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+app-name = "YT Morphe"
+module-prop-name = "yt-morphe"
+#arch = "all"
 
-[Twitch]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/twitch-interactive-inc/twitch/"
-uptodown-dlurl = "https://twitch.en.uptodown.com/android"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/tv.twitch.android.app"
 
-[Twitter]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
-build-mode = "apk"
-dpi = "120-640dpi"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+[YouTube-Music-Morphe]
+enabled = true
+build-mode = "module"
+excluded-patches = ""
+included-patches = ""
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+#rv-brand = "Morphe"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
+app-name = "YT-Music Morphe"
+module-prop-name = "ytm-morphe"
+#arch = "both"
 
-[TikTok]
-enabled = false
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.zhiliaoapp.musically"
-included-patches = "'SIM spoof'"
 
-[Messenger]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
-arch = "arm64-v8a"
-
-[IconPackStudio]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
+[Reddit-Morphe]
+enabled = true
+build-mode = "module"
+excluded-patches = ""
+included-patches = ""
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+#rv-brand = "Morphe"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit/"
+app-name = "Reddit Morphe"
+module-prop-name = "reddit-morphe"
+#arch = "all"
